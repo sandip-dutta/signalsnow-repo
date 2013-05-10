@@ -1,0 +1,43 @@
+div.formArea button.search{
+	display:block;
+	float:left;
+	position:absolute;
+	right:20px;
+	top:20px;
+	}
+div.customSelect {
+    width: 195px;
+	padding-bottom:10px;
+}
+.leftPanelSelectSmall {
+    width: 175px;
+}
+div.infoPeople,
+div.view-report{
+    background-color:#FBFBFB !important;
+	background-image:none !important;
+	background-repeat:no-repeat !important;
+}
+div.btnSubmit{
+	border:none !important;
+	background-color:none !important;
+}
+div.formFloatingPanel input{
+	width:216px;
+	border:#CCCCCC solid 1px;
+}
+
+div.formFloatingPanel label{
+	width:70px;
+	padding-right:10px;
+	text-align:right;
+}
+input.contButton{
+	padding-top:75px;
+}
+div#cities-map{
+	width:618px;
+}
+div.recentUpdateLinkCont{
+	width:591px;
+}

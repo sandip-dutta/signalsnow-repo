@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Signal Snowboards</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/custom-style.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.4" media="screen" />
+<!--[if IE 7]>
+<link href="css/ie7.css" rel="stylesheet" />
+<![endif]-->
+<!--[if IE 8]>
+<link href="css/ie8.css" rel="stylesheet" />
+<![endif]-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.ui-1.8.21.easing.min.js"></script> 
+<script type="text/javascript" src="js/dropdown.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50aacdfc2181f764"></script>
+<script type="text/javascript">
+	function updateSRC(newVal) {
+		$('#myVideo').attr('src', "http://www.youtube.com/embed/TGVW73be9bo"+ newVal +"?rel=0&showinfo=0");
+	}
+</script>
+<!--lightbox -->
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+<!--lightbox -->
+</head>
+
+<body>
+<!--Top Menu Start -->
+<div class="topMenuWraper">
+	<div class="customWraper topMenu">
+    	<a href="#" class="menuLink">Navigation</a>
+    	<ul class="mainMenu">
+        	<li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Signal</a></li>
+                    <li><a href="#">Leatherman</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Shows</a>
+                <ul class="sub-menu">
+                	<li><a href="#">ETT</a></li>
+                </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Dealers &amp; Distributors</a>
+                <ul class="sub-menu">
+                    <li><a href="#">US Dealers</a></li>
+                    <li><a href="#">Canadian Dealers</a></li>
+                    <li><a href="#">World Distributors</a></li>
+                </ul>
+            </li>
+        </ul>
+    <div class="spacer"></div>
+    </div>
+</div>
+<!--Top Menu End -->
+<div class="socialMediaWraper customWraper">
+    <div class="breadcrumbsPanel fltLeft">
+        <ul class="breadcrumb customBreadcrumb">
+            <!-- Breadcrumb NavXT 4.3.0 -->
+<a class="site-home" href="http://50.57.174.68" title="Go to ."></a>»&nbsp;<a class="page" href="http://50.57.174.68/about-us/" title="Go to About Us.">About Us</a>»&nbsp;Signal        </ul>
+    </div>
+    <div class="socialIconPanel fltRight">
+        <div class="textwidget">
+            <ul>
+                <li><a href="http://youtube.com/signalsnowboard" target="_blank"><img width="36" height="36" src="http://50.57.174.68/wp-content/uploads/2013/04/youtube-icon.png"></a></li>
+                <li><a href="http://facebook.com/signalsnow" target="_blank"><img width="36" height="36" src="http://50.57.174.68/wp-content/uploads/2013/04/facebook-icon.png"></a></li>
+                <li><a href="http://twitter.com/signalsnowboard" target="_blank"><img width="36" height="36" src="http://50.57.174.68/wp-content/uploads/2013/04/twitter-icon.png"></a></li>
+                <li><a href="http://instagram.com/signalsnowboard" target="_blank"><img width="36" height="36" src="http://50.57.174.68/wp-content/uploads/2013/04/insta-icon.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--Body Panel Start -->
+<div class="customWraper bodyPanel">
+	<div class="contentPanel">
+    	<div class="signal6PicCont">
+        	<img src="images/signal6-page-art.png" alt=""/>
+        </div>
+        <div class="signal6VideoCont">
+        	<div class="signal6PicFloatPanel">
+            	<img src="images/signal6-page-art2.png" alt="">
+            </div>
+            <div class="signal6VideoFloatPanel">
+            	<div class="video-container">
+                	<iframe width="560" height="315" src="http://www.youtube.com/embed/HhJBHF53brI" frameborder="0" allowfullscreen></iframe>
+                </div>	
+            </div>
+        <div class="spacer"></div>
+        </div>
+        <div class="registerOuter">
+            <h3>SIGNAL 6 SIGN-UP</h3>
+            <p>After sign up, you will be contacted by a member of the Signal sales staff to finalize your enrollment.</p>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="content">
+                    <div class="formPanel">
+                        <label class="firstRowTxt"><span class="required">*</span> First Name:</label>
+                        <input type="text" name="firstname" class="small" value="" />
+                        <label class="firstRowTxt"><span class="required">*</span> Last Name:</label>
+                        <input type="text" name="lastname" class="small" value="" />
+                    </div>
+                    <div class="formPanel">
+                        <label><span class="required">*</span> E-Mail:</label>
+                        <input type="text" name="email" value="" />
+                    </div>
+                    <div class="formPanel">
+                            <input type="submit" value="Continue" class="button signal6Cont" />
+                    </div>
+                </div>
+            </form>
+		</div>
+        <p>Ever find yourself wishing for a longer snow season? We know how you feel. And while we still haven’t figured out a way to control weather patterns, we have come up with a way to bring you six months with Signal.</p>
+        <p><strong>Join SIGNAL 6 now and you’ll begin receiving monthly packages filled with all sorts of goodies — sure to scratch that itch during the summer months. Every month for six months another box will arrive at your door filled with soft goods, CDs, stickers and other specialty items from Signal and friends. The final box will arrive just in time for the snow to fall and that box will contain a brand new 13.14 Signal board of your choice.</strong></p>
+        <p><strong>This is a perfect way for Signal fans to beat the lines, avoid shipping costs and get the Signal they want delivered to their door. It also makes a great gift!</strong></p>
+        <p><strong>Sign-up is limited, so join now!</strong></p>
+        <h3>HERES HOW IT WORKS:</h3>
+        <ul class="accessListStyle">
+            <li>Sign up below between now and May 15th, 2013 You’ll get a sneak peak at the 13.14 line and from there, you pick your board.</li>
+            <li>After that, you sit back and wait. Beginning in mid-May, boxes will start arriving to your door. And when October comes, the sixth delivery will be your board.</li>
+            <li>SIGNAL 6 costs only 6 payments of $74.00 USD. Not only is this the easiest way to make a snowboard purchase— you get so much more!</li>
+            <li>Remember, sign-up is limited so join now!</li>
+         </ul>
+         <h3>FINE PRINT:</h3>
+            <ul class="accessListStyle">
+                <li>Auto payments will be deducted monthly. Cancellation of the card or payment will result in a discontinuation of monthly deliveries.</li>
+                <li>Offer not valid on EPIC or EPIC SPLIT</li>
+                <li>Offer not valid outside of the USA</li>
+            </ul>
+    </div>
+</div>
+<!--Body Panel End -->
+<!--Footer Start -->
+<div class="customWraper footer">
+	<div class="footerLeft">
+    	<p>SIGNAL SNOWBOARDS </p>
+        <p>5302 OCEANUS DR | HUNTINGTON BEACH, CA | 92649</p>
+        <p>714.899.4055</p>
+    </div>
+    <div class="footerRight">
+        <ul>
+            <li><a href="#">EMAIL US</a></li>
+            <li><a href="#">PRIVACY</a></li>
+            <li><a href="#">WARRANTY</a></li>
+        </ul>	
+    </div>
+</div>
+<!--Footer End -->
+</body>
+</html>

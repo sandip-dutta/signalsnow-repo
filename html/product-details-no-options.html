@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Signal Snowboards</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/custom-style.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.4" media="screen" />
+<!--[if IE 7]>
+<link href="css/ie7.css" rel="stylesheet" />
+<![endif]-->
+<!--[if IE 8]>
+<link href="css/ie8.css" rel="stylesheet" />
+<![endif]-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.ui-1.8.21.easing.min.js"></script> 
+<script type="text/javascript" src="js/dropdown.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50aacdfc2181f764"></script>
+<script type="text/javascript">
+	function updateSRC(newVal) {
+		$('#myVideo').attr('src', "http://www.youtube.com/embed/TGVW73be9bo"+ newVal +"?rel=0&showinfo=0");
+	}
+</script>
+<!--lightbox -->
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+<!--lightbox -->
+</head>
+
+<body>
+<!--Top Menu Start -->
+<div class="topMenuWraper">
+	<div class="customWraper topMenu">
+    	<a href="#" class="menuLink">Navigation</a>
+    	<ul class="mainMenu">
+        	<li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Signal</a></li>
+                    <li><a href="#">Leatherman</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Shows</a>
+                <ul class="sub-menu">
+                	<li><a href="#">ETT</a></li>
+                </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Dealers &amp; Distributors</a>
+                <ul class="sub-menu">
+                    <li><a href="#">US Dealers</a></li>
+                    <li><a href="#">Canadian Dealers</a></li>
+                    <li><a href="#">World Distributors</a></li>
+                </ul>
+            </li>
+        </ul>
+    <div class="spacer"></div>
+    </div>
+</div>
+<!--Top Menu End -->
+<!--Body Panel Start -->
+<div class="customWraper bodyPanel">
+    <!--Poducts Starts -->
+    <div class="productDetails row-fluid">
+    	<div class="span3 productLeftPanel">
+        	<ul>
+            	<li class="active"><a href="#">Boards</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li class="noBorder"><a href="#">Mixed Signals</a></li>
+            </ul>
+        </div>
+        <div class="span9">
+        	<div class="row-fluid">
+            	<div class="span9 proDetailsMid">
+                    <div class="breadcrumbsPanel">
+                        <ul class="customBreadcrumb">
+                            <li><a href="http://50.57.174.68/">Home</a></li>
+                            <li>&raquo;</li>
+                            <li><a href="#">Boards</a></li>
+                            <li>Jake OG Flat</li>
+                        </ul>
+                    </div>
+                  <h2>Jake Og Flat</h2>
+                    <div class="proDetailsMidPicCont">
+                   	  <img src="images/product-detail-pic1.png" alt="" border="0" usemap="#Map2"/>
+                        <map name="Map2">
+                          <area shape="rect" coords="15,0,159,547" href="images/park-big.png" class="fancybox" data-fancybox-group="gallery">
+                            <area shape="rect" coords="176,0,288,548" href="images/park-big.png" class="fancybox" data-fancybox-group="gallery">
+                            <area shape="rect" coords="303,0,421,548" href="images/park-big.png" class="fancybox" data-fancybox-group="gallery">
+                            <area shape="rect" coords="426,0,531,547" href="images/park-big.png" class="fancybox" data-fancybox-group="gallery">
+                      </map>
+                  </div>
+                    <p>These boards are a favorite year after year because they
+have a soft flex, are durable and can handle anything you get yourself into. From camber to flat, wide waist to narrow, there is a PARK board here for everyone. Inspired from ETT, this year’s graphic has cassette tape under the topsheet
+—like the Boombox episode!</p>
+                    <ul class="accessListStyle">
+                        <li>Built for today’s terrain parks and city streets— Built to take a beating</li>
+                        <li>Magnum ABS sidewalls</li>
+                        <li>Sintered bases on all models</li>
+                        <li>“Park Profile” core, which is thinner on the nose and tail but has a standard thickness between your feet</li>
+                        <li>The alternating grain structure of the Poplar core provides maximum strength and maximum pop</li>
+                        <li>Lightweight triaxial glass on the top and bottom of the core gives the Park a soft but more controlled flex</li>
+                        <li>Nylon 8210 top material provides a softer torsional flex</li>
+                        <li>Carbon stringers from tip to tail for added pop and strength</li>
+                    </ul>
+                </div>
+                <div class="span3 proDetailsRight">
+                    <div class="socialIconPanel">
+                        <ul>
+                            <li><a target="_blank" href="http://youtube.com/signalsnowboard"><img width="36" height="36" src="images/youtube-icon.png"/></a></li>
+                            <li><a target="_blank" href="http://facebook.com/signalsnow"><img width="36" height="36" src="images/facebook-icon.png"></a></li>
+                            <li><a target="_blank" href="http://twitter.com/signalsnowboard"><img width="36" height="36" src="images/twitter-icon.png"></a></li>
+                            <li><a target="_blank" href="http://instagram.com/signalsnowboard"><img width="36" height="36" src="images/insta-icon.png"></a></li>
+                        </ul>
+                    </div>
+                    <h2>Jake Og Flat</h2>
+                    <h2 class="productHeading">Price: $369.99</h2>
+                    <div class="productDetailButtonPanel">
+                        <button class="addToCart">Add to Cart</button>
+                        <button class="checkOut">Checkout</button>
+                        <button class="addWish">Add to Wishlist</button>
+                    </div>
+                </div>
+            </div>		
+        </div>
+    </div>
+    <!--Poducts Ends -->
+</div>
+<!--Body Panel End -->
+<!--Footer Start -->
+<div class="customWraper footer">
+	<div class="footerLeft">
+    	<p>SIGNAL SNOWBOARDS </p>
+        <p>5302 OCEANUS DR | HUNTINGTON BEACH, CA | 92649</p>
+        <p>714.899.4055</p>
+    </div>
+    <div class="footerRight">
+        <ul>
+            <li><a href="#">EMAIL US</a></li>
+            <li><a href="#">PRIVACY</a></li>
+            <li><a href="#">WARRANTY</a></li>
+        </ul>	
+    </div>
+</div>
+<!--Footer End -->
+</body>
+</html>

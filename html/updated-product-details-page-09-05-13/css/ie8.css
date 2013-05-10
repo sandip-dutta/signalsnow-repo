@@ -1,0 +1,33 @@
+div.formArea button.search{
+	display:block;
+	float:left;
+	position:absolute;
+	right:20px;
+	top:20px;
+	}
+div.customSelect {
+    width: 195px;
+	padding-bottom:10px;
+}
+.leftPanelSelectSmall {
+    width: 175px;
+}
+div.infoPeople,
+div.view-report{
+    background-color:#FBFBFB !important;
+	background-image:none !important;
+	background-repeat:no-repeat !important;
+}
+div.popUpCont{
+	width:760px;
+}
+div.reportLeft{
+	width:340px;
+}
+div.recentOverView{
+	width:338px;
+}
+div.btnClose{
+	right:-15px;
+	top:-9px;
+}
